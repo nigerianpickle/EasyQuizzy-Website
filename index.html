@@ -1,207 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Presentation</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyQuizzy – Revolutionizing Study</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- GSAP and ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Body & Font Styling */
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    /* Fixed Navigation */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 1em 2em;
-      z-index: 1000;
-      border-bottom: 1px solid #eee;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav li {
-      margin: 0 1em;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #555;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: url('hero-background.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      padding: 0 1em;
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-    }
-
-    .hero p {
-      font-size: 1.5em;
-    }
-
-    /* Section Styling */
-    section {
-      padding: 4em 2em;
-      min-height: 100vh;
-    }
-
-    /* Alternate background for readability */
-    section:nth-child(even) {
-      background: #f8f8f8;
-    }
-
-    section h2 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-      text-align: center;
-    }
-
-    section .content {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    /* Footer Styling */
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em;
-    }
-
-    /* Smooth Scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
+    body { font-family: 'Inter', sans-serif; }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
-<body>
-
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#vision">Vision</a></li>
-      <li><a href="#users">Users</a></li>
-      <li><a href="#functionality">Functionality</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#demo">Screen Recording</a></li>
-      <li><a href="#postmortem">Postmortem</a></li>
-    </ul>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-indigo-600">EasyQuizzy</a>
+      <div class="space-x-6">
+        <a href="#hero" class="text-gray-600 hover:text-indigo-600 transition">Home</a>
+        <a href="#vision" class="text-gray-600 hover:text-indigo-600 transition">Vision</a>
+        <a href="#features" class="text-gray-600 hover:text-indigo-600 transition">Features</a>
+        <a href="#team" class="text-gray-600 hover:text-indigo-600 transition">Team</a>
+        <a href="#demo" class="text-gray-600 hover:text-indigo-600 transition">Demo</a>
+        <a href="#reflections" class="text-gray-600 hover:text-indigo-600 transition">Reflections</a>
+      </div>
+    </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero">
-    <div>
-      <h1>Project Title</h1>
-      <p>Sleek &amp; Modern Project Presentation</p>
-    </div>
-  </header>
-
-  <!-- Project Overview Section -->
-  <section id="overview">
-    <div class="content">
-      <h2>Project Overview</h2>
-      <p>Describe your project’s purpose, the problem it solves, and its key features.</p>
-      <!-- Additional content can be added here -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center" style="background: url('https://source.unsplash.com/1600x900/?education,technology') no-repeat center center/cover;">
+    <div class="absolute inset-0 bg-indigo-900 opacity-60"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">EasyQuizzy</h1>
+      <p class="text-xl md:text-2xl text-gray-100 mb-8">Revolutionizing the way you study – all in one smart platform.</p>
+      <div class="space-x-4">
+        <a href="#features" class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-500 transition transform hover:scale-105">Explore Features</a>
+        <a href="#demo" class="bg-transparent border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition transform hover:scale-105">Watch Demo</a>
+      </div>
     </div>
   </section>
 
-  <!-- Vision Statement Section -->
-  <section id="vision">
-    <div class="content">
-      <h2>Vision Statement</h2>
-      <p>Outline your project’s goals, aspirations, and the impact it aims to achieve.</p>
-      <!-- Additional content can be added here -->
+<!-- Vision Section -->
+<section id="vision" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-indigo-600 text-center mb-10">
+        Our Vision &amp; Mission
+      </h2>
+      <div class="flex flex-col md:flex-row items-start">
+        <!-- Left: Illustration -->
+        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <img src="./img/ChatGPT Image Apr 2, 2025, 04_43_48 PM.png" 
+               alt="Vision Illustration" 
+               class="rounded-lg shadow-lg" />
+        </div>
+        <!-- Right: Vision Statement Content -->
+        <div class="md:w-1/2">
+          <article class="prose prose-indigo">
+            <h3 style="font-weight: bolder;">Vision Statement</h3>
+            <p>
+              EasyQuizzy is an all-in-one study tool designed to help users learn more effectively and stay organized while studying. With features that support structured learning, quiz creation, note-taking, and progress tracking, EasyQuizzy makes studying simple, engaging, and accessible anytime, anywhere.
+            </p>
+            <h3 style="font-weight: bolder;">What is EasyQuizzy?</h3>
+            <p>
+              EasyQuizzy provides a complete set of tools to help users take control of their study habits. Instead of switching between different apps for notes, quizzes, and study tracking, everything is available in one place. Users can create their own quizzes, log their study activities, design custom notes, and even take timed study sessions to stay focused. With built-in study tips and an intuitive app guide, EasyQuizzy ensures that anyone can quickly get started and improve their learning process.
+            </p>
+            <h3 style="font-weight: bolder;">Who is EasyQuizzy for?</h3>
+            <p>
+              EasyQuizzy is designed for students, self-learners, and professionals preparing for exams or certifications. Whether someone needs a structured way to study for school, wants to track progress on personal learning goals, or is simply looking for a better way to organize study materials, EasyQuizzy provides the right tools. Its flexible features make it useful for both casual learners and those who want a detailed, goal-driven study plan.
+            </p>
+            <h3 style="font-weight: bolder;">Why is EasyQuizzy valuable?</h3>
+            <p>
+              Studying is most effective when it is active, structured, and personalized. EasyQuizzy helps users engage with their material through custom quizzes, organized notes, and activity tracking. The ability to create personalized quizzes makes it easier to test knowledge, while study activity logging ensures users can see their progress over time. Timed study sessions help maintain focus, and study organization features ensure that everything is easily accessible. By combining these tools into one app, EasyQuizzy eliminates distractions and makes studying more efficient.
+            </p>
+            <h3 style="font-weight: bolder;">How will EasyQuizzy be successful?</h3>
+            <p>
+              Success for EasyQuizzy means users find it helpful and use it regularly. The goal is for users to complete an average of five quizzes per week and spend at least 30 minutes per study session. At least 70% of users should report improved retention or better test performance after one month of use. Additionally, engagement should be high, with at least 60% of users continuing to use the app after three months. By continuously improving based on user feedback and ensuring the app remains easy to use, EasyQuizzy aims to be the go-to study companion for learners everywhere.
+            </p>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Intended Users Section -->
-  <section id="users">
-    <div class="content">
-      <h2>Intended Users</h2>
-      <p>Detail the target user personas, their needs, and use-case scenarios.</p>
-      <!-- Additional content can be added here -->
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-indigo-600 mb-12">Features That Empower You</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Feature Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-user-circle text-indigo-600 text-4xl mr-4"></i>
+            <h3 class="text-2xl font-semibold">User Authentication</h3>
+          </div>
+          <p class="text-gray-700">Sign up quickly and securely to access your personalized study dashboard on any device.</p>
+        </div>
+        <!-- Feature Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-sticky-note text-indigo-600 text-4xl mr-4"></i>
+            <h3 class="text-2xl font-semibold">Smart Notes</h3>
+          </div>
+          <p class="text-gray-700">Effortlessly manage and transform your notes into engaging quizzes and flashcards.</p>
+        </div>
+        <!-- Feature Card 3 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-clipboard-list text-indigo-600 text-4xl mr-4"></i>
+            <h3 class="text-2xl font-semibold">Quiz Creation</h3>
+          </div>
+          <p class="text-gray-700">Create personalized quizzes that challenge your knowledge and enhance retention.</p>
+        </div>
+        <!-- Feature Card 4 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-chart-line text-indigo-600 text-4xl mr-4"></i>
+            <h3 class="text-2xl font-semibold">Progress Tracking</h3>
+          </div>
+          <p class="text-gray-700">Monitor your progress with intuitive dashboards and detailed analytics.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Major Functionality Section -->
-  <section id="functionality">
-    <div class="content">
-      <h2>Major Functionality</h2>
-      <p>List and describe the core features of your application along with possible use cases.</p>
-      <!-- Additional content can be added here -->
+  <!-- Team Section -->
+  <section id="team" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-indigo-600 mb-12">Meet Our Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+        <!-- Team Member 1 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition">
+          <img src="https://source.unsplash.com/150x150/?face,1" alt="Jessie Ttito" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Jessie Ttito</h3>
+          <p class="text-gray-600 mb-2">Unit Testing &amp; 3-Tier Architecture</p>
+          <p class="text-gray-700 text-sm">Gained hands-on experience in writing robust tests and creating scalable architectures.</p>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition">
+          <img src="https://source.unsplash.com/150x150/?face,2" alt="Jezreel Domingo" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Jezreel Domingo</h3>
+          <p class="text-gray-600 mb-2">Unit &amp; Systems Testing</p>
+          <p class="text-gray-700 text-sm">Mastered the art of testing from unit tests to full-scale system validations.</p>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition">
+          <img src="https://source.unsplash.com/150x150/?face,3" alt="Daniel Nwogo" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Daniel Nwogo</h3>
+          <p class="text-gray-600 mb-2">Version Control &amp; Documentation</p>
+          <p class="text-gray-700 text-sm">Developed deep expertise in version control strategies and clear documentation practices.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Team & Contributors Section -->
-  <section id="team">
-    <div class="content">
-      <h2>Team &amp; Contributors</h2>
-      <p>Introduce your team members, their roles, and the special development skills gained throughout the project.</p>
-      <!-- Additional content can be added here -->
+  <!-- Demo Section -->
+  <section id="demo" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-indigo-600 mb-6">Watch EasyQuizzy in Action</h2>
+      <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+        Experience a live demo of our app and see firsthand how EasyQuizzy transforms your learning journey.
+      </p>
+      <div class="mx-auto max-w-3xl">
+        <div class="relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <i class="fas fa-play-circle text-white text-6xl opacity-75"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Screen Recording Section -->
-  <section id="demo">
-    <div class="content">
-      <h2>Screen Recording</h2>
-      <p>Embed or link to a screen recording that demonstrates the key features of your project.</p>
-      <!-- Example embed code:
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
-      -->
-    </div>
-  </section>
-
-  <!-- Development Postmortem Section -->
-  <section id="postmortem">
-    <div class="content">
-      <h2>Development Postmortem</h2>
-      <p>Reflect on the development process: what went right, what went wrong, lessons learned, and areas for future improvement.</p>
-      <!-- Additional content can be added here -->
+  <!-- Reflections Section -->
+  <section id="reflections" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-indigo-600 mb-12">Project Reflections</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Reflection 1 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-8">
+          <h3 class="text-2xl font-semibold text-green-600 mb-4">What Went Right</h3>
+          <ul class="list-disc pl-6 text-gray-700 space-y-2">
+            <li><strong>Teamwork:</strong> Exceptional collaboration and clear communication.</li>
+            <li><strong>User Feedback:</strong> Early testing refined our features.</li>
+            <li><strong>Timely Delivery:</strong> Core features launched as planned.</li>
+          </ul>
+        </div>
+        <!-- Reflection 2 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-8">
+          <h3 class="text-2xl font-semibold text-red-600 mb-4">What Went Wrong</h3>
+          <ul class="list-disc pl-6 text-gray-700 space-y-2">
+            <li><strong>Scope Creep:</strong> Extra features extended timelines.</li>
+            <li><strong>Tech Challenges:</strong> Integration hurdles slowed progress.</li>
+            <li><strong>Limited Testing:</strong> Some edge cases were missed initially.</li>
+          </ul>
+        </div>
+        <!-- Reflection 3 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-8">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-4">Lessons Learned</h3>
+          <ul class="list-disc pl-6 text-gray-700 space-y-2">
+            <li><strong>User Focus:</strong> Prioritize a user-centric approach from day one.</li>
+            <li><strong>Agile Iteration:</strong> Break tasks into manageable sprints.</li>
+            <li><strong>Continuous Feedback:</strong> Regular testing improves quality.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Project Name. All rights reserved.</p>
+  <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+    <div class="container mx-auto px-6">
+      &copy; 2025 EasyQuizzy. All rights reserved.
+    </div>
   </footer>
 
+  <!-- GSAP Scroll Animations -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray("section").forEach(section => {
+      gsap.from(section, {
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        ease: "power2.out"
+      });
+    });
+  </script>
 </body>
 </html>
