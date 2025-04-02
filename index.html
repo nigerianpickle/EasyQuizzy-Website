@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Presentation</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body & Font Styling */
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Fixed Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1em 2em;
+      z-index: 1000;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 1em;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #555;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('hero-background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 1em;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 4em 2em;
+      min-height: 100vh;
+    }
+
+    /* Alternate background for readability */
+    section:nth-child(even) {
+      background: #f8f8f8;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+
+    section .content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Footer Styling */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#users">Users</a></li>
+      <li><a href="#functionality">Functionality</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#demo">Screen Recording</a></li>
+      <li><a href="#postmortem">Postmortem</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div>
+      <h1>Project Title</h1>
+      <p>Sleek &amp; Modern Project Presentation</p>
+    </div>
+  </header>
+
+  <!-- Project Overview Section -->
+  <section id="overview">
+    <div class="content">
+      <h2>Project Overview</h2>
+      <p>Describe your project’s purpose, the problem it solves, and its key features.</p>
+      <!-- Additional content can be added here -->
+    </div>
+  </section>
+
+  <!-- Vision Statement Section -->
+  <section id="vision">
+    <div class="content">
+      <h2>Vision Statement</h2>
+      <p>Outline your project’s goals, aspirations, and the impact it aims to achieve.</p>
+      <!-- Additional content can be added here -->
+    </div>
+  </section>
+
+  <!-- Intended Users Section -->
+  <section id="users">
+    <div class="content">
+      <h2>Intended Users</h2>
+      <p>Detail the target user personas, their needs, and use-case scenarios.</p>
+      <!-- Additional content can be added here -->
+    </div>
+  </section>
+
+  <!-- Major Functionality Section -->
+  <section id="functionality">
+    <div class="content">
+      <h2>Major Functionality</h2>
+      <p>List and describe the core features of your application along with possible use cases.</p>
+      <!-- Additional content can be added here -->
+    </div>
+  </section>
+
+  <!-- Team & Contributors Section -->
+  <section id="team">
+    <div class="content">
+      <h2>Team &amp; Contributors</h2>
+      <p>Introduce your team members, their roles, and the special development skills gained throughout the project.</p>
+      <!-- Additional content can be added here -->
+    </div>
+  </section>
+
+  <!-- Screen Recording Section -->
+  <section id="demo">
+    <div class="content">
+      <h2>Screen Recording</h2>
+      <p>Embed or link to a screen recording that demonstrates the key features of your project.</p>
+      <!-- Example embed code:
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+      -->
+    </div>
+  </section>
+
+  <!-- Development Postmortem Section -->
+  <section id="postmortem">
+    <div class="content">
+      <h2>Development Postmortem</h2>
+      <p>Reflect on the development process: what went right, what went wrong, lessons learned, and areas for future improvement.</p>
+      <!-- Additional content can be added here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Project Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
