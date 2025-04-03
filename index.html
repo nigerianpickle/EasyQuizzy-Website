@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-ryeYY1Ka8Em+X1LxR/9KXrSg5kpR+3wU1cK8qCh1rNYjT8m7XQ1Zq0G0Kx8VzY3fQ+4K9FAr7X6Bqvb+IQ0F5sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body { font-family: 'Inter', sans-serif; }
     html { scroll-behavior: smooth; }
@@ -56,10 +57,11 @@
       <div class="flex flex-col md:flex-row items-start">
         <!-- Left: Illustration -->
         <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-          <img src="./img/ChatGPT Image Apr 2, 2025, 09_32_36 PM.png" 
+          <img src="./img/EasyQuizzyImg.png" 
                alt="Vision Illustration" 
                class="rounded-lg shadow-lg" />
         </div>
+        
         <!-- Right: Vision Statement Content -->
         <div class="md:w-1/2">
           <article class="prose prose-indigo">
@@ -94,39 +96,106 @@
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center text-indigo-600 mb-12">Features That Empower You</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Feature Card 1 -->
+        <!-- User Profile-->
         <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
           <div class="flex items-center mb-4">
             <i class="fas fa-user-circle text-indigo-600 text-4xl mr-4"></i>
-            <h3 class="text-2xl font-semibold">User Authentication</h3>
+            <h3 class="text-2xl font-semibold">Account Creation</h3>
           </div>
-          <p class="text-gray-700">Sign up quickly and securely to access your personalized study dashboard on any device.</p>
+          <p class="text-gray-700">Users can create an account with a unique username and password to access the app. Once logged in, they can access all the features EasyQuizzy offers.</p>
         </div>
-        <!-- Feature Card 2 -->
+        <!-- Study Notes -->
         <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
           <div class="flex items-center mb-4">
             <i class="fas fa-sticky-note text-indigo-600 text-4xl mr-4"></i>
-            <h3 class="text-2xl font-semibold">Smart Notes</h3>
+            <h3 class="text-2xl font-semibold">Study Notes</h3>
           </div>
-          <p class="text-gray-700">Effortlessly manage and transform your notes into engaging quizzes and flashcards.</p>
+          <p class="text-gray-700"> Users can create, edit, and save study notes. These notes can be organized, reviewed, and modified at any time. 
+        </p>
         </div>
-        <!-- Feature Card 3 -->
+        <!-- Quiz Creation -->
         <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
           <div class="flex items-center mb-4">
             <i class="fas fa-clipboard-list text-indigo-600 text-4xl mr-4"></i>
             <h3 class="text-2xl font-semibold">Quiz Creation</h3>
           </div>
-          <p class="text-gray-700">Create personalized quizzes that challenge your knowledge and enhance retention.</p>
+          <p class="text-gray-700">Users can create custom quizzes, edit them, and test their knowledge through quiz sessions. Each quiz session provides questions and answers, allowing users to navigate between questions, review answers, and track progress.</p>
         </div>
-        <!-- Feature Card 4 -->
+        <!-- Logs -->
         <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
           <div class="flex items-center mb-4">
             <i class="fas fa-chart-line text-indigo-600 text-4xl mr-4"></i>
-            <h3 class="text-2xl font-semibold">Progress Tracking</h3>
+            <h3 class="text-2xl font-semibold">Study logging</h3>
           </div>
-          <p class="text-gray-700">Monitor your progress with intuitive dashboards and detailed analytics.</p>
+          <p class="text-gray-700">The app tracks user activity, such as when they log in, and allows them to view their activity history. This helps users keep track of their study progress over time.
+        </p>
         </div>
+
+        <!-- General Quizzes -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-earth text-indigo-600 text-4xl mr-4"></i>
+              <h3 class="text-2xl font-semibold">General Quizzes</h3>
+            </div>
+            <p class="text-gray-700">Users are provided with  a set of pre-made quizzes covering diverse subjects, allowing users to engage in frequent self-assessment.</p>
+          </div>
+
+        <!-- Timed Study Sessions -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-hourglass text-indigo-600 text-4xl mr-4"></i>
+              <h3 class="text-2xl font-semibold">Study Sessions</h3>
+            </div>
+            <p class="text-gray-700">EasyQuizzy offers timed study sessions to help users focus. Users can customize the length of their study and break periods and track their time during study sessions.</p>
+          </div>
+
+        <!-- Study Tips -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-lightbulb text-indigo-600 text-4xl mr-4"></i>
+              <h3 class="text-2xl font-semibold">Study Tips</h3>
+            </div>
+            <p class="text-gray-700">The app provides study tips and techniques to help users improve their study habits. These tips are designed to enhance learning and retention.</p>
+          </div>
+
+        <!-- App Guide -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-book text-indigo-600 text-4xl mr-4"></i>
+            <h3 class="text-2xl font-semibold">App Guide</h3>
+          </div>
+          <p class="text-gray-700">EasyQuizzy includes an intuitive guide to help users navigate the app’s features. The guide provides step-by-step instructions for tasks like account creation, quiz management, study sessions, and more.
+        </p>
+        </div>
+
+        <!-- Study Uploads -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-upload text-indigo-600 text-4xl mr-4"></i>
+              <h3 class="text-2xl font-semibold">Study Uploads</h3>
+            </div>
+            <p class="text-gray-700">Users can upload and store study materials such as images and PDFs, making it easier to keep all their study resources in one place.
+            </p>
+          </div>
+
+          <!-- Remaining Features -->
+          <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-play text-indigo-600 text-4xl mr-4"></i>
+              <h3 class="text-2xl font-semibold">Features Coming Soon</h3>
+            </div>
+            <a href="https://code.cs.umanitoba.ca/comp3350-winter2025/A02-G13-EasyQuizzy/-/issues/?sort=created_date&state=all&label_name%5B%5D=Feature&milestone_title=Future&first_page_size=100" target="_blank" class="text-indigo-600 font-semibold underline hover:text-indigo-500 transition">
+              Check our GitHub for updates.
+            </a>
+          </div>
+
+
+
       </div>
+
+      </div>
+
+      
     </div>
   </section>
 
@@ -137,81 +206,290 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
         <!-- Team Member 1 -->
         <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition">
-          <img src="https://source.unsplash.com/150x150/?face,1" alt="Jessie Ttito" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <img src="./img/Jessie Avatar.png" alt="Jessie Ttito" class="w-24 h-30  mx-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Jessie Ttito</h3>
           <p class="text-gray-600 mb-2">Software Developer &amp; Project Manager</p>
-          <p class="text-gray-700 text-sm">Gained hands-on experience in writing robust tests and creating scalable architectures.</p>
+          <p class="text-gray-700 text-sm">Gained hands-on experience in writing unit tests to ensure app features functioned correctly. This helped identify bugs early and improved the app's reliability and stability. </p>
         </div>
         <!-- Team Member 2 -->
         <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition">
-          <img src="https://source.unsplash.com/150x150/?face,2" alt="Jezreel Domingo" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <img src="./img/Jezreel Avatar.png" alt="Jezreel Domingo" class="w-24 h-30  mx-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Jezreel Domingo</h3>
           <p class="text-gray-600 mb-2">Software Developer &amp; Project Manager</p>
-          <p class="text-gray-700 text-sm">Mastered the art of testing from unit tests to full-scale system validations.</p>
+          <p class="text-gray-700 text-sm"> Learned how to use mocks as stand-ins for dependencies and how to verify behaviours with mocks.
+        </p>
         </div>
         <!-- Team Member 3 -->
         <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition">
-          <img src="https://source.unsplash.com/150x150/?face,3" alt="Daniel Nwogo" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <img src="./img/Daniel Avatar.png" alt="Daniel Nwogo" class="w-24 h-30  mx-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Daniel Nwogo</h3>
           <p class="text-gray-600 mb-2">Software Developer &amp; Project Manager</p>
-          <p class="text-gray-700 text-sm">Developed deep expertise in version control strategies and clear documentation practices.</p>
+          <p class="text-gray-700 text-sm">While working on this project, I gained practical experience with version control, explored various Git strategies, and learned how to handle merge conflicts. I also learned how to document effectively using version control systems.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Demo Section -->
-  <section id="demo" class="py-20 bg-gray-50">
+<!-- Demo Section -->
+<section id="demo" class="py-20 bg-gray-50">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold text-indigo-600 mb-6">Watch EasyQuizzy in Action</h2>
       <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-        Experience a live demo of our app and see firsthand how EasyQuizzy transforms your learning journey.
+        Experience live demos of each feature and see firsthand how EasyQuizzy transforms your learning journey.
       </p>
-      <div class="mx-auto max-w-3xl">
-        <div class="relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <i class="fas fa-play-circle text-white text-6xl opacity-75"></i>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Demo Card 1: Account Creation & Login -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/user login.mp4" title="Account Creation & Login Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            Account Creation &amp; Login
+          </div>
+        </div>
+        <!-- Demo Card 2: Study Notes -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/saved notes.mp4" title="Study Notes Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            Study Notes
+          </div>
+        </div>
+        <!-- Demo Card 3: Quiz Creation & Sessions -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/quiz editor.mp4" title="Quiz Creation & Sessions Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            Quiz Creation &amp; Sessions
+          </div>
+        </div>
+        <!-- Demo Card 4: Study Sessions -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/study session.mp4" title="Study Sessions Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            Study Sessions
+          </div>
+        </div>
+        <!-- Demo Card 5: Progress Tracking -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/user logs.mp4" title="Progress Tracking Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            Study Logging
+          </div>
+        </div>
+        <!-- Demo Card 6: Study Tips -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/study tips.mp4" title="Study Tips Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            Study Tips
+          </div>
+        </div>
+        <!-- Demo Card 7: Quiz Editor -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/quiz editor.mp4" title="Quiz Editor Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            Quiz Editor
+          </div>
+        </div>
+        <!-- Demo Card 8: Study Uploads -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/study upload.mp4" title="Study Uploads Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            Study Uploads
+          </div>
+        </div>
+        <!-- Demo Card 9: App Guide -->
+        <div class="group relative bg-black rounded-xl shadow-lg overflow-hidden" style="padding-top: 56.25%;">
+          <iframe class="absolute inset-0 w-full h-full" src="./vid/app guide.mp4" title="App Guide Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 p-2 text-white text-sm font-semibold">
+            App Guide
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
-  <!-- Reflections Section -->
-  <section id="reflections" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center text-indigo-600 mb-12">Project Reflections</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <!-- Reflection 1 -->
-        <div class="bg-gray-50 rounded-xl shadow-lg p-8">
-          <h3 class="text-2xl font-semibold text-green-600 mb-4">What Went Right</h3>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
-            <li><strong>Teamwork:</strong> Exceptional collaboration and clear communication.</li>
-            <li><strong>User Feedback:</strong> Early testing refined our features.</li>
-            <li><strong>Timely Delivery:</strong> Core features launched as planned.</li>
-          </ul>
+  <!-- Project Reflections Section (Scroll-based storytelling design) -->
+
+<section id="reflections" class="w-full">
+    <!-- Section Title -->
+    <h2 class="text-4xl font-bold text-center mb-12">Project Reflections</h2>
+  
+    <!-- "What Went Right" Card -->
+    <div class="ref-section bg-gradient-to-br from-green-800 to-teal-600 text-gray-100 px-8 py-16">
+      <div class="max-w-3xl mx-auto">
+        <!-- Icon -->
+        <div class="text-center mb-6">
+          <i class="fa-solid fa-check-circle text-5xl text-green-300"></i>
         </div>
-        <!-- Reflection 2 -->
-        <div class="bg-gray-50 rounded-xl shadow-lg p-8">
-          <h3 class="text-2xl font-semibold text-red-600 mb-4">What Went Wrong</h3>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
-            <li><strong>Scope Creep:</strong> Extra features extended timelines.</li>
-            <li><strong>Tech Challenges:</strong> Integration(e.g HSQLDB) hurdles slowed progress.</li>
-            <li><strong>Limited Testing:</strong> Some edge cases were missed initially.</li>
-          </ul>
+        <!-- Heading -->
+        <h3 class="text-3xl font-bold text-center mb-4">What Went Right</h3>
+        <!-- Reflection Text -->
+        <div class="text-lg leading-relaxed space-y-4">
+          <p>
+            The team’s collaboration was exceptional – initial hurdles were overcome quickly, keeping morale high throughout the development cycle. 
+            As a result, we delivered many key components on time and even implemented most goals successfully.
+          </p>
         </div>
-        <!-- Reflection 3 -->
-        <div class="bg-gray-50 rounded-xl shadow-lg p-8">
-          <h3 class="text-2xl font-semibold text-yellow-500 mb-4">Lessons Learned</h3>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
-            <li><strong>Better Communication:</strong> Prioritize communicatino from day one.</li>
-            <li><strong>Agile Iteration:</strong> Break tasks into manageable sprints.</li>
-            <li><strong>Continuous Feedback:</strong> Regular testing improves quality.</li>
-          </ul>
+      </div>
+    </div>
+  
+    <!-- "What Went Wrong" Card -->
+    <div class="ref-section bg-gradient-to-br from-red-800 to-orange-600 text-gray-100 px-8 py-16">
+      <div class="max-w-3xl mx-auto">
+        <!-- Icon -->
+        <div class="text-center mb-6">
+          <i class="fa-solid fa-triangle-exclamation text-5xl text-orange-300"></i>
+        </div>
+        <!-- Heading -->
+        <h3 class="text-3xl font-bold text-center mb-4">What Went Wrong</h3>
+        <!-- Reflection Text -->
+        <div class="text-lg leading-relaxed space-y-4">
+          <p>
+            Of course, not everything went as planned. We encountered unexpected changes in project scope and some technical debt issues, which slowed down our progress. 
+            Integration challenges arose between certain modules, taking extra time to resolve. 
+            There were also a few communication lapses that led to minor misunderstandings. Despite these hurdles, the team adapted and kept moving forward.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- "Lessons Learned" Card -->
+    <div class="ref-section bg-gradient-to-br from-indigo-800 to-purple-700 text-gray-100 px-8 py-16">
+      <div class="max-w-3xl mx-auto">
+        <!-- Icon -->
+        <div class="text-center mb-6">
+          <i class="fa-solid fa-lightbulb text-5xl text-yellow-300"></i>
+        </div>
+        <!-- Heading -->
+        <h3 class="text-3xl font-bold text-center mb-4">Lessons Learned</h3>
+        <!-- Reflection Text -->
+        <div class="text-lg leading-relaxed space-y-4">
+          <p>
+            In the end, these experiences taught us invaluable lessons. We learned the importance of staying flexible with our plans and the value of regular team check-ins to catch issues early. 
+            The challenges underscored the need for better communication and better planning.
+          </p>
+          <!-- Quote-style callout -->
+          <blockquote class="border-l-4 border-gray-300 pl-4 italic opacity-90">
+            "Every challenge is a lesson in disguise."
+          </blockquote>
+          <p>
+            Moving forward, we’ll carry these insights into future projects. They will help us anticipate problems better and adapt more swiftly, turning past mistakes into future improvements.
+          </p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Detailed Postmortem Section -->
+<section id="postmortem" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-indigo-600 mb-12">Development Postmortem</h2>
+      <div class="space-y-12">
+        <!-- Card 1: Project Evolution -->
+        <div class="postmortem-card bg-white rounded-xl shadow-lg p-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <i class="fa-solid fa-history text-indigo-600 text-3xl"></i>
+            <h3 class="text-2xl font-bold">Project Evolution</h3>
+          </div>
+          <p class="text-gray-700">
+            At the beginning of the project, we had an ambitious vision for the app with many ideas for features we wanted to include. However, as we progressed, we encountered challenges we hadn’t predicted. One of the main difficulties was having only three members on the team, making it harder to manage the workload and divide tasks effectively. We also faced challenges with the database, and implementing and testing the features took longer than expected. As a result, we were not able to implement one of the planned features. Despite these obstacles, the project became a valuable learning experience for all of us. We learned how to adapt to changes, solve problems as they arose, and collaborate as a team. While the final result wasn’t exactly what we initially envisioned, we are still proud of what we accomplished.
+          </p>
+        </div>
+        <!-- Card 2: Team & Process Learnings -->
+        <div class="postmortem-card bg-white rounded-xl shadow-lg p-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <i class="fa-solid fa-users text-green-600 text-3xl"></i>
+            <h3 class="text-2xl font-bold">Team &amp; Process Learnings</h3>
+          </div>
+          <p class="text-gray-700">
+            As a team, we learned that planning ahead and setting clear deadlines are crucial to staying organized. We realized that having a well-structured plan from the start would have helped us manage our time more effectively. Regular meetings to check on progress and address issues were vital. In future projects, we’d be more proactive with communication, sharing updates more frequently, and asking for help sooner. We’d also stick to a structured approach with clear deadlines to reduce stress and ensure we don’t rush at the last minute.
+          </p>
+        </div>
+        <!-- Card 3: Conclusions -->
+        <div class="postmortem-card bg-white rounded-xl shadow-lg p-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <i class="fa-solid fa-lightbulb text-yellow-600 text-3xl"></i>
+            <h3 class="text-2xl font-bold">Conclusions</h3>
+          </div>
+          <p class="text-gray-700">
+            This project taught us that good planning and communication are key to success. Although we aimed high, we faced unexpected challenges—like a small team and database difficulties—that slowed progress. By breaking the project into smaller, manageable tasks, we could have avoided last-minute pressure. Ultimately, clear planning, good teamwork, and flexibility are essential to handling challenges and delivering a strong project. We’ll carry these lessons forward into our future work.
+          </p>
+        </div>
+        <!-- Card 4: Iteration 2 Retrospective -->
+        <div class="postmortem-card bg-white rounded-xl shadow-lg p-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <i class="fa-solid fa-clipboard-check text-blue-600 text-3xl"></i>
+            <h3 class="text-2xl font-bold">Iteration 2 Retrospective</h3>
+          </div>
+          <p class="text-gray-700">
+            After our iteration 2 review, we recognized that our planning process needed improvement. We decided to be more organized in the next iteration by creating a clear weekly plan. This plan helped us set goals and deadlines so that we always knew what needed to be done. We didn’t wait until the last minute—instead, we broke everything down into manageable tasks. This approach not only helped us stay on track but also made us feel more confident and organized heading into iteration 3.
+          </p>
+        </div>
+        <!-- Card 5: What Would You Do Differently -->
+        <div class="postmortem-card bg-white rounded-xl shadow-lg p-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <i class="fa-solid fa-redo text-purple-600 text-3xl"></i>
+            <h3 class="text-2xl font-bold">What Would You Do Differently?</h3>
+          </div>
+          <p class="text-gray-700">
+            If we had the chance to start over, we would focus more on upfront planning. We would break tasks into smaller, manageable steps and set clear, realistic deadlines from the very beginning. For iteration 3, we implemented a weekly plan immediately after iteration 2, which significantly improved our progress. This strategy would help us avoid the last-minute rush and reduce overall stress, making our workflow smoother.
+          </p>
+        </div>
+        <!-- Card 6: Time Analysis & Surprises -->
+        <div class="postmortem-card bg-white rounded-xl shadow-lg p-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <i class="fa-solid fa-stopwatch text-red-500 text-3xl"></i>
+            <h3 class="text-2xl font-bold">Time Analysis &amp; Surprises</h3>
+          </div>
+          <p class="text-gray-700">
+            One of the tasks that took the most time was working with the database and implementing features that required detailed testing. We encountered unexpected issues that slowed us down considerably. Additionally, refactoring our code to address SOLID violations took extra effort. Conversely, UI-related tasks, like designing simple screens, were relatively quick since they didn’t require as much iterative refinement. A big surprise was just how much time debugging and fine-tuning the app consumed, highlighting the need to allocate more time for testing in future projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- GSAP Animations for Postmortem Cards -->
+  <script>
+    // Ensure GSAP and ScrollTrigger are registered (assumes GSAP is loaded via CDN)
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.postmortem').forEach(card => {
+      gsap.from(card, {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+          toggleActions: "play none none none"
+        }
+      });
+    });
+  </script>
+  
+  <!-- GSAP (GreenSock) CDN Scripts for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-38PV6au10btbwJgM5ZcVOgnj7kCXxCS07P6bYcGBHSGa21BRcHRcXS4MmQagS6R3RC+0WP1mkVMSwZ1Zp+gbpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-WHAI6zQmHnwn2mCtW2VFJ4u1TmCxUKWXGmHP5f1JhTzFKncl9w4LK7dVoFf/8ygQb/dgYvqdk7gO+7RwsQz3sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script>
+    // Register the ScrollTrigger plugin with GSAP
+    gsap.registerPlugin(ScrollTrigger);
+  
+    // Animate each reflection card when it scrolls into view
+    document.querySelectorAll('.ref-section').forEach(section => {
+      gsap.from(section.querySelectorAll('i, h3, p, blockquote'), {
+        opacity: 0,
+        y: 30,
+        duration: 0.6,
+        ease: "power2.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",    // start animation when section's top is 80% down from top of viewport
+          toggleActions: "play none none none"  // play animation on enter, no repeat on exit or re-enter
+        }
+      });
+    });
+  </script>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
